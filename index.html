@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo50x50.png">
+    <!-- fotns google buttons -->
+    <!--Styles-->
+    <link rel="stylesheet" href="main.css">
+    <!-- Font localhost:5500 Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <title>Alejo Eduardo Español</title>
+</head>
+
+<body id="body">
+    <header class="header">
+        <nav>
+            <li> <a class="neon-button" onclick="cambioHistoria()">
+                    <h3>Historia</h3>
+                </a>
+            </li>
+            <li> <a class="neon-button" onclick="cambioGaleria()">
+                    <h3>Galeria</h3>
+                </a>
+            </li>
+            <li><a class="neon-button" onclick="cambioTech()">
+                    <h3>Tech</h3>
+                </a>
+            </li>
+            <li><a class="neon-button" onclick="cambioContacto()">
+                    <h3>Contacto</h3>
+                </a>
+            </li>
+        </nav>
+    </header>
+    <article class="article">
+
+        <div id="galeria">
+            <center>
+                <div class="slide-contenedor">
+                    <div class="miSlider fade">
+                        <img src="img/slider/orion0.jpg" alt="">
+                    </div>
+                    <div class="miSlider fade">
+                        <img src="img/slider/orion1.png" alt="">
+                    </div>
+                    <div class="miSlider fade">
+                        <img src="img/slider/orion2.jpg" alt="">
+                    </div>
+                    <div class="miSlider fade">
+                        <img src="img/slider/orion3.jpg" alt="">
+                    </div>
+                    <div class="miSlider fade">
+                        <img src="img/slider/orion4.jpg" alt="">
+                    </div>
+                    <div class="miSlider fade">
+                        <img src="img/slider/orion5.jpg" alt="">
+                    </div>
+                    <div class="miSlider fade">
+                        <img src="img/slider/orion6.jpg" alt="">
+                    </div>
+
+                    <div class="barras">
+                        <span class="barra active" onclick="posicionSlide(1)"></span>
+                        <span class="barra" onclick="posicionSlide(2)"></span>
+                        <span class="barra" onclick="posicionSlide(3)"></span>
+                        <span class="barra" onclick="posicionSlide(4)"></span>
+                        <span class="barra" onclick="posicionSlide(5)"></span>
+                        <span class="barra" onclick="posicionSlide(6)"></span>
+                        <span class="barra" onclick="posicionSlide(7)"></span>
+                    </div>
+                </div>
+            </center>
+            <div class="direcciones">
+                <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+            </div>
+        </div>
+        <div class="barras">
+            <span class="barra active" onclick="posicionSlide(1)"></span>
+            <span class="barra" onclick="posicionSlide(2)"></span>
+            <span class="barra" onclick="posicionSlide(3)"></span>
+            <span class="barra" onclick="posicionSlide(4)"></span>
+            <span class="barra" onclick="posicionSlide(5)"></span>
+            <span class="barra" onclick="posicionSlide(6)"></span>
+            <span class="barra" onclick="posicionSlide(7)"></span>
+        </div>
+        </div>
+        <div id="historia">
+            <h3 id="abuela">Saludo a mis abuelas.</h3>
+            &nbsp; &nbsp; Si a usted le pido que adivine de que trata la foto que puede ver en el fondo de la web
+            de seguro
+            acierte,
+            la probabilidad es tan alta que no le tomará más de dos o tres intentos.
+            De hecho, ni siquiera se trata de adivinar ya que nuestra mente recurre a la memoria primitiva, la que yace
+            en nuestro inconsciente, para dar forma al insconsciente colectivo <span id="sec">secuestrado</span>.<br>
+            Quiero decir, el hecho de observar el cielo resuena con nuestro pasado y el de nuestros ancestros, ¿ Por
+            qué?,
+            ¿ Qué atestigua el espacio de nuestro pasado ?.
+            La conexion es tan enorme y poderosa que el solo hecho de intentar explicarlo puede traer confusiones. <br>
+            Por ello siempre recomiendo el libro <a target="_blank" id="leenda"
+                href="https://trinityatierra.files.wordpress.com/2009/06/argidazkia2.pdf">“Leendanik”</a> ya que no
+            solo resuelve esta incógnita, sino que además
+            trae
+            libertad. <br>
+            Gracias a WordPress el blog <a target="_blank" id="trinity"
+                href="https://trinityatierra.wordpress.com/2009/06/26/leendanik-desde-el-principio-basado-en-conversaciones-con-alexander-eleazar/#more-2660">Trinity
+                A tierra</a> sigue online.
+            <br>
+            Os invito a pasar por la seccion <span onclick="cambioGaleria()" id="enlacegal">“Galeria”</span> para poder
+            ver otras
+            imagenes del mismo sitio.
+            <br> <br>
+            <i>Alejo Eduardo Español, Domingo 6 de Junio del 2021, Buenos Aires, Argentina. 19:05hs</i>
+        </div>
+        <div id="tech">
+            <img id="imglinus" src="img/linus.jpg" alt="">
+            <h3 id="nombrelinus">Linus Torvalds</h3>
+            &nbsp;&nbsp; Ideólogo y ejecutor del kernel linux compartió su codigo en internet al mundo a modo
+            miren en lo que he trabajado, su primer idea no fue un sofware libre y gratuito aunque cambió de
+            opinión.
+            Se trata de un programa informático que hace de
+            traductor entre
+            una maquina y el humano en formas de pulsos eléctricos. <br> Este software se distingue del resto ya que es
+            de código abierto y cualquier
+            persona puede modificarlo o utilizarlo para fines lucrativos.
+            Hablamos de un sistema 100% descentralizado en el cual las versiones obsoletas son discriminadas para dar
+            lugar a la eficiencia
+            y máxima utilidad de las versiones optimizadas.
+            Un programa que no funciona no sirve.<br><br>
+            <center> <iframe id="videolinux" width="660" height="370" src="https://www.youtube.com/embed/MNXIXDbEmVc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </center>
+        </div>
+        <center>
+            <div id="contacto">
+                <br> <br>
+                <p id="contact">Desarrollo Web <br> <br> alejoeduardo@protonmail.com</p> <br> <br>
+                <div class="centrarcontacto">
+                    <a target="_blank" href="https://twitter.com/alejo_espanol">
+                        <div id="twt"></div>
+                    </a><a target="_blank" href="https://www.facebook.com/alejo.essp">
+                        <div id="fb"></div>
+                    </a><a target="_blank" href="https://www.youtube.com/channel/UCyu3gGET6j12pATUl6U1Fhg/videos">
+                        <div id="youtube"></div>
+                    </a>
+                </div>
+                <br> <br>
+            </div>
+        </center>
+    </article>
+    <footer class="footer">
+        <div class="brave"></div>
+        <div class="radio">
+            <audio controls>
+                <source src="audio/clair.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </footer>
+    <!-- // La obra titulada “Leendanik”, (“Desde el Principio”), comprende un período de tiempo que va desde la creación del Hombre, hace no más de medio millón de años, hasta la Victoria de Troia.
+
+        // Los textos de la Bibele, la Biblia original, que poco tiene que ver con la Biblia que conocemos todos, y a la que tanto el autor de esta obra, como Eleazar tuvieron acceso, están escritos en negrita y cursiva.
+        
+        // A diferencia de la obra “Los Bere”, de Eleazar, la lectura de esta obra es fácil y sencilla, aunque probablemente, la extensión, profundidad y complejidad de los temas abordados, no podrá evitar que muchos lectores se quieran dirigir al autor en busca de preguntas a muchas respuestas que les podrán surgir.
+        
+        // En el foro, tendremos todos esta oportunidad única.
+        
+        // Trinity a Tierra agradece mucho al autor de “Leendanik” que haya elegido este lugar para darla a conocer al mundo.
+        
+        // La obra, que sólo sorprenderá a quienes no hayan leído antes a Eleazar, ni conozcan su pensamiento y trabajos, descritos en “Los Bere”, comienza así:
+        
+        // “En el principio fue el misterio insondable del origen de la Creación que habita en el corazón de todo cuanto existe. De ese desconocido misterio surgió la vida con todas sus manifestaciones, las que son visibles, y las que no.”
+        
+        // “También existía una estirpe de seres, de gran inteligencia y alma desarrollada. Su Ciencia era excelente, inmensa. Vivían y se movían a través del Cielo Infinito”.
+        
+        // Y continúa de este modo;
+        
+        // “La estirpe del Hombre Original se multiplicó en Baleden. Crearon bellas ciudades y desarrollaron una floreciente civilización”.
+        
+        // Para llegar a un epílogo de infarto.
+        
+        // “El Baticanus es el Trono de Satan, palabra que significa “propietario” entendiéndose como la figura del patriarca supremo, dueño y señor de la prole”
+        
+        // “Se entenderá entonces que reconocemos a la Iglesia católica de Roma como la sucesora máxima del mandato ancestral de los Pares y Lores, que ha pasado de generación en generación, guardando celosamente sus orígenes, e intentando por todos los medios, aniquilar el mensaje de Dios y su descendencia en la Tierra. Hay otras iglesias y religiones también adheridas al trono de Satán”.
+        
+        // “Ni que decir tiene que los únicos que se rebelaron contra Dios, son justamente los Pale, quienes entraron en guerra y acabaron derrotados. Hay quien puede pensar que esa rebelión era justa y que Dios era y es un tirano. Si así fuera, ¿por qué nos permite el libre albedrío?. ¿Realmente estamos cumpliendo su voluntad y deseos?”
+        
+        // “Pero Dios sabe muy bien que el remedio a tanto sufrimiento está en nosotros mismos y en nuestra capacidad de despertar del sueño”
+        
+        // “El Ojo que todo lo ve es ahora el Ojo de los Pare, quienes a través de su red de espionaje y de control, esclavizan y someten al hombre…”
+        
+        // “…Es es Ojo de Satán que usurpa el trono de Dios para convertirse en Dueño del Mundo”.
+        
+        // “La Historia es, en realidad, la crónica de una gran Conspiración que se ha perpetuado durante milenios y que ha condenado al hombre a una lucha sin cuartel entre lo que es justo y bueno para todos y lo que es de provecho para unos pocos en detrimento de los demás”
+        
+        // Gora Alexandre; -->
+    <script src="main.js"></script>
+</body>
+
+</html>
