@@ -219,3 +219,7 @@ function muestraSlides(n) {
   barras[indice - 1].className += ' active';
 
 }
+
+let d = document;
+let test = d.getElementById('abuela');
+console.log(test);
