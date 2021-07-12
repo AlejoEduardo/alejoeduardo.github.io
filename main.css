@@ -536,9 +536,7 @@ table {
 #trinity {
    border-radius: 1em;
 }
-#contacto:hover {
-   transform: scale(1.01)
-}
+
 
 #contacto.section {
    display: block;
