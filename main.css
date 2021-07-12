@@ -540,15 +540,7 @@ table {
    border-radius: 1em;
 }
 
-#nombrelinus {
-   position: fixed;
-   margin: -65px 0 0 -12px;
-   font: 700 bold;
-   color: rgb(68, 190, 68);
-   font-family: 'Cinzel';
-   transform: scale(1);
-   transition: 250ms;
-}
+
 
 #nombrelinus:hover {
    text-shadow: 0 0 4px rgb(0, 0, 0);
@@ -570,14 +562,7 @@ table {
    cursor: pointer;
 }
 
-#abuela {
-   position: fixed;
-   margin: -65px 0 0 -12px;
-   font: 700 bold;
-   color: rgb(68, 190, 68);
-   transform: scale(1);
-   transition: 250ms;
-}
+
 
 #abuela:hover {
    text-shadow: rgb(0, 0, 0) 0 0 6px;
