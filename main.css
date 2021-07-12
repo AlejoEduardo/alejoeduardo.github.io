@@ -20,14 +20,14 @@ html {
 
 body {
    background: url(img/backfixed.jpg);
-   background-size: 100%;
+   background-size:cover;
    background-repeat: no-repeat;
    display: grid;
    grid-template-columns: 20% 20% 20% 20% 20%;
    grid-template-rows: 1vh auto 9.5%;
    padding: 0;
    min-height: 100%;
-   max-height: 100%;
+   
 }
 
 #twt {
@@ -37,6 +37,7 @@ body {
    background-repeat: no-repeat;
    height: 3.3rem;
    width: 3.3rem;
+   margin-left: -95px;
    grid-column: 2/3;
    grid-row: 2/3;
    transform: scale(1);
