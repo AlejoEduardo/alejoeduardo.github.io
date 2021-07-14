@@ -136,7 +136,7 @@ body {
    /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #ffe47aa8, #3d7eaabe);
    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ thanks Ui Gradients :D */
-   color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
    width: 90%;
    border: rgba(255, 255, 255, 0.473) solid 3px;
    grid-column: 1/-1;
@@ -149,10 +149,6 @@ body {
 }
 
 #tech.section {
-   display: block;
-}
-
-#tech.on {
    display: block;
 }
 
@@ -560,7 +556,7 @@ table {
 
 #tech::-webkit-scrollbar {
    background: rgb(255, 255, 255);
-   width: 12px;
+   width: 14px;
    border-radius: 100% 100% 100% 100%;
 }
 
