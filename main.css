@@ -130,22 +130,22 @@ body {
 #tech {
    margin: auto;
    height: 70vh;
-   background: #3d7eaa8f;
+   background: #285f83c4;
    /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #ffe47ab7, #3d7eaac5);
+   background: -webkit-linear-gradient(to right, #47230bd8, #3d7eaadc);
    /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #ffe47aa8, #3d7eaabe);
+   background: linear-gradient(to right, #2b375fde, #513daa86);
    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ thanks Ui Gradients :D */
    color: rgb(255, 255, 255);
    width: 90%;
    border: rgba(255, 255, 255, 0.473) solid 3px;
    grid-column: 1/-1;
    grid-row: 2/3;
-   font-size: 1.75em;
+   font-size: 1.95em;
    display: none;
    overflow: auto;
    border-radius: .4em;
-   padding: 9px;
+   padding: 11px;
 }
 
 #tech.section {
@@ -158,6 +158,7 @@ body {
 
 #imglinus {
    right: auto;
+   margin: 5px;
    max-height: 50%;
    max-width: 50%;
    border-radius: .5em;
@@ -498,10 +499,10 @@ table {
    width: 90%;
    grid-row: 2/3;
    overflow: auto;
-   font-size: 1.75em;
+   font-size: 1.95em;
    padding: 9px;
-   border: 5px solid rgba(206, 197, 197, 0.534);
-   border-radius: .6em;
+   border: 3px solid rgba(206, 197, 197, 0.534);
+   border-radius: .4em;
    display: none;
 }
 
@@ -510,10 +511,9 @@ table {
 }
 
 #contacto {
-   color: rgb(20, 185, 103);
    background: #7b4397;
    margin: auto;
-   padding: 0;
+   padding: 1px;
    height: 70vh;
    width: 90vw;
    /* fallback for old browsers */
@@ -521,10 +521,10 @@ table {
    /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #dc2430b6, #7b4397af);
    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   border-radius: 1em;
+   border-radius: .4em;
    grid-column: 1/-1;
    grid-row: 2/3;
-   box-shadow: 15px 10px rgba(0, 0, 0, 0.445);
+   box-shadow: 13px 9px rgba(0, 0, 0, 0.445);
    display: none;
    transform: scale(1);
    transition: 250ms;
