@@ -10,10 +10,10 @@
 }
 
 html {
-   height: 100vh;
+   height: 100%;
    min-height: 100vh;
-   width: 100vw;
    min-width: 100vw;
+   max-width: 100vw;
 }
 
 /** Navigation **/
@@ -24,11 +24,10 @@ body {
    background-repeat: no-repeat;
    display: grid;
    grid-template-columns: 20% 20% 20% 20% 20%;
-   grid-template-rows: 5% auto 10vh;
+   grid-template-rows: 5% auto 5%;
    padding: 0;
    min-height: 100vh;
    max-height: 100vh;
-   width: 100vw;
    
 }
 
@@ -100,15 +99,15 @@ body {
 
 .footer {
    width: 95vw;
-   height: 10vh;
+   height: auto;
    padding: 0;
    grid-column: 1/-1;
-   margin-top: 0 0 5px 0;
+   margin: 0 0 45px 0;
    display: grid;
    /* grid-column: 1/-1;
    grid-row: 3/4; */
    justify-self: baseline;
-   align-self: end;
+   align-self: center;
    grid-template-columns: auto auto auto auto;
    grid-template-rows: 5vh;
    /* align-items: center; */
@@ -627,13 +626,14 @@ table {
 
 @media screen and (max-width:1000px) {
    html {
-      min-width: 100%;
-      max-width: 100%;
+      min-width: 100vw;
+      max-width: 100vw;
+      max-height: 100vh;
    }
    body {
       background-size:cover;
-      grid-template-rows: 1vh auto 8vh;
-      max-width: 100vw;
+      grid-template-rows: 1vh auto 5vh;
+      max-width: 100%;
    }
    .header {
       height: 33px;
@@ -657,27 +657,27 @@ table {
       position: relative;
    }
    .footer {
-     width: 99vw;
-     height: 7vh;
+     max-width: 80vw;
+     height: 5vh;
      display: grid;
      grid-template-columns: auto auto auto auto ;
-     grid-template-rows: 8vh;
+     grid-template-rows: 5vh;
      /* grid-column: 1/-1;
      grid-row: 3/-1;
      margin-left: -9px;
      margin-right: 0;
      padding: -5px; */
      justify-items: center;
-      margin-top: 0;
-      margin-bottom: 20px;
-      align-items: center;
+     padding: 0;
+     margin-bottom: 55px;
+     align-items:stretch;
 
    }
    
    .article {
       height: auto;
       margin: 0;
-      padding: 0 0 0 0;
+      padding: 0;
       width: 100%;
       grid-column: 1/-1;
    }
@@ -687,7 +687,7 @@ table {
    .radio {
       /* bottom: -10px; */
       grid-column: 4/-1;
-      justify-self: end;
+      justify-self: center;
 
       /* transform: scale(1);
       transition: 280ms; */
@@ -765,13 +765,17 @@ table {
    }
 }
 
-@media screen and (max-width: 768px) {
-
+/* @media screen and (max-width: 768px) {
+   body {
+      max-width: 100vw;
+   }
+html {
+   max-width: 100vw;
+}
 #videolinux {
    border-radius: 1em;
    height: 280px;
    width: 480px;
    margin: 0;
    padding: 0;
-}
-}
+} */
