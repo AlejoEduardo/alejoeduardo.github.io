@@ -24,29 +24,15 @@ body {
    background-repeat: no-repeat;
    display: grid;
    grid-template-columns: 20% 20% 20% 20% 20%;
-   grid-template-rows: 1vh auto 9.5%;
+   grid-template-rows: 5% auto 10vh;
    padding: 0;
-   min-height: 100%;
+   min-height: 100vh;
+   max-height: 100vh;
+   width: 100vw;
    
 }
 
-#twt {
-   background: url(img/twtfull.png);
-   background-size: 80%;
-   background-position: center;
-   background-repeat: no-repeat;
-   height: 3.3rem;
-   width: 3.3rem;
-   margin-left: -95px;
-   grid-column: 2/3;
-   grid-row: 2/3;
-   transform: scale(1);
-   transition: 250ms;
-}
 
-#twt:hover {
-   transform: scale(1.15);
-}
 
 #youtube {
    background: url(img/yt80.png);
@@ -72,7 +58,7 @@ body {
    background-repeat: no-repeat;
    height: 3.3rem;
    width: 3.3rem;
-   grid-column: 4/5;
+   grid-column: 2/3;
    grid-row: 2/3;
    transform: scale(1);
    transition: 250ms;
@@ -82,11 +68,11 @@ body {
    transform: scale(1.15);
 }
 
-.centrarcontacto {
+/* .centrarcontacto {
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-}
+} */
 
 .header {
    height: 53px;
@@ -102,10 +88,10 @@ body {
 .article {
    max-height: 70%;
    width: 100%;
-   margin: 0 auto;
+   margin: 0;
    grid-column: 1/-1;
    grid-row: 2/3;
-   padding-top: 13px;
+   padding-top: 5px;
    place-self: center;
    justify-self: center;
 }
@@ -113,18 +99,19 @@ body {
 /**FOOTER **/
 
 .footer {
-   width: auto;
-   height: 9vh;
+   width: 95vw;
+   height: 10vh;
    padding: 0;
-   margin-top: -0.5%;
-   display: grid;
    grid-column: 1/-1;
-   grid-row: 3/4;
-   justify-self: center;
-   align-self: center;
-   grid-template-columns: auto 60vw auto;
+   margin-top: 0 0 5px 0;
+   display: grid;
+   /* grid-column: 1/-1;
+   grid-row: 3/4; */
+   justify-self: baseline;
+   align-self: end;
+   grid-template-columns: auto auto auto auto;
    grid-template-rows: 5vh;
-   align-items: center;
+   /* align-items: center; */
 }
 
 #tech {
@@ -176,7 +163,8 @@ body {
    background-size: 90%;
    height: 50px;
    width: 130px;
-   margin: 0;
+   grid-column: 1/2;
+   margin: 0 0 0 15px;
    transform: scale(1);
    transition: 250ms;
 }
@@ -194,7 +182,7 @@ body {
    width: 230px;
 }
 
-#centering {
+#centerimg {
    display: flex;
    justify-self: center;
    align-items: center;
@@ -209,18 +197,18 @@ body {
 
 .radio {
    right: 0;
-   grid-column: 3/4;
+   grid-column: 4/-1;
    margin-bottom: -1.3%;
    grid-row: 1/-1;
-   box-shadow: 1px 1px rgb(0, 0, 0);
    border-radius: 11px;
    transform: scale(1);
    transition: 280ms;
+   justify-self: end;
 }
 
 .radio:hover {
    transform: scale(1.02);
-   box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.815);
+  
 }
 
 nav {
@@ -599,11 +587,7 @@ table {
    border-radius: 5px;
 }
 
-@media screen and (max-width:1000px) {
-   body {
-      display: none;
-   }
-}
+
 
 .direcciones {
    position: absolute;
@@ -639,4 +623,155 @@ table {
 
 .adelante:hover {
    text-shadow: rgb(255, 0, 0) 0 5px 10px solid;
+}
+
+@media screen and (max-width:1000px) {
+   html {
+      min-width: 100%;
+      max-width: 100%;
+   }
+   body {
+      background-size:cover;
+      grid-template-rows: 1vh auto 8vh;
+      max-width: 100vw;
+   }
+   .header {
+      height: 33px;
+      width: 100vw;
+      font-weight: 300;
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      margin-top: 1%;
+   }
+   .neon-button {
+      font-size: 1rem;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--clr-neon);
+      border: var(--clr-neon) 0.125em solid;
+      padding: 0.25em 1em;
+      border-radius: 0.25em;
+      text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+      box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+      position: relative;
+   }
+   .footer {
+     width: 99vw;
+     height: 7vh;
+     display: grid;
+     grid-template-columns: auto auto auto auto ;
+     grid-template-rows: 8vh;
+     /* grid-column: 1/-1;
+     grid-row: 3/-1;
+     margin-left: -9px;
+     margin-right: 0;
+     padding: -5px; */
+     justify-items: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+      align-items: center;
+
+   }
+   
+   .article {
+      height: auto;
+      margin: 0;
+      padding: 0 0 0 0;
+      width: 100%;
+      grid-column: 1/-1;
+   }
+   .brave {
+      display: none;
+   }
+   .radio {
+      /* bottom: -10px; */
+      grid-column: 4/-1;
+      justify-self: end;
+
+      /* transform: scale(1);
+      transition: 280ms; */
+      box-shadow: none;
+   }
+   #fb {
+      background-size: 55%;
+      margin-right: -10px;
+      margin-left: -5px;
+      padding-left: -10px;
+      grid-column: 2/3;
+   }
+   #youtube {
+      background-size: 65%;
+      margin-left: -5px;
+      margin-right: -8px;
+      grid-column: 3/4;
+   }
+  
+   #imglinus {
+      max-height: 70%;
+      max-width: 95%;
+   }
+
+   .neon-button::before {
+      pointer-events: none;
+      content: "";
+      position: relative;
+   }
+  
+   .atras {
+      height: 132px;
+      margin-left: auto;
+   }
+   .adelante {
+      height: 132px;
+      margin-right: auto;
+   }
+   #videolinux {
+      border-radius: 1em;
+      height: 220px;
+      width: 280px;
+      margin: 0;
+      padding: 0;
+   }
+   .direcciones {
+      display: table-cell;
+      vertical-align: middle;
+   }
+   #historia, #tech {
+      font-size: 1.45em;
+      width: 95vw;
+   }
+   #tech::-webkit-scrollbar {
+      background: rgb(255, 255, 255);
+      width: 8px;
+      border-radius: 100% 100% 100% 100%;
+   }
+   
+   #tech::-webkit-scrollbar-thumb {
+      border: 2px solid rgb(0, 0, 0);
+      background-color: rgb(204, 202, 202);
+      border-radius: 5px;
+   }
+   #historia::-webkit-scrollbar {
+      background: #ffffff;
+      width: 5px;
+      border-radius: 100% 100% 100% 100%;
+   }
+   
+   #historia::-webkit-scrollbar-thumb {
+      border: 2px solid rgb(0, 0, 0);
+      background-color: rgb(204, 202, 202);
+      border-radius: 5px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+
+#videolinux {
+   border-radius: 1em;
+   height: 280px;
+   width: 480px;
+   margin: 0;
+   padding: 0;
+}
 }
