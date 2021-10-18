@@ -321,7 +321,7 @@ table {
    margin: 0 auto;
    /* background-color: rgb(80, 175, 25); */
    justify-self: center;
-   width: 100vw;
+   width: 100%;
    align-self: center;
    padding: 0;
    height: 100%;
@@ -672,9 +672,11 @@ table {
      margin-bottom: 45px;
      margin-left: -5px;
      align-items:stretch;
-
    }
    
+   .galeria {
+      display: none;
+   }
    .article {
       height: auto;
       margin: 0;
