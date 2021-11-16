@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: alejoeduardo.github.io
-Token: a71c1e8579f562d01fc285e68911beaa5eaada660f3819b2cad044590568727c
