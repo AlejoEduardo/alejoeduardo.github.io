@@ -739,6 +739,13 @@ table {
         margin: 0;
         padding: 0;
     }
+    #videobere{
+        border-radius: 1em;
+        height: 220px;
+        width: 280px;
+        margin: 0;
+        padding: 0;
+    }
     .direcciones {
         display: table-cell;
         vertical-align: middle;
