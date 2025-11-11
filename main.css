@@ -118,13 +118,13 @@ body {
 #tech {
     margin: auto;
     height: 70vh;
-    background: #285f83c4;
+    background: #1a2f3dc4;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #47230bd8, #3d7eaadc);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2b375fde, #513daa86);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ thanks Ui Gradients :D */
-    color: rgb(167, 195, 215);
+    color: rgb(200, 212, 221);
     width: 90%;
     border: rgba(255, 255, 255, 0.473) solid 3px;
     grid-column: 1/-1;
