@@ -124,7 +124,7 @@ body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2b375fde, #513daa86);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ thanks Ui Gradients :D */
-    color: rgb(43, 137, 48);
+    color: rgb(167, 195, 215);
     width: 90%;
     border: rgba(255, 255, 255, 0.473) solid 3px;
     grid-column: 1/-1;
